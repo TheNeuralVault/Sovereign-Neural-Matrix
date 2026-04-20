@@ -24,27 +24,25 @@ jobs:
             echo "MATCH=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Execute ARM64 JS-Engine Hardening
+      - name: Execute Static ARM64 Hardening
         if: steps.gate.outputs.MATCH == 'true'
         run: |
-          echo "RAISING THE BAR: Installing ARM64 Cross-Compiler..."
           sudo apt-get update
-          sudo apt-get install -y gcc-aarch64-linux-gnu
+          sudo apt-get install -y gcc-aarch64-linux-gnu libc6-dev-arm64-cross
           
-          echo "Cloning QuickJS..."
           git clone https://github.com/bellard/quickjs.git
           cd quickjs
           
-          echo "COMPILING FOR ARM64 (SOTA Target)..."
-          # We explicitly tell 'make' to use the ARM64 compiler
-          make -j$(nproc) CROSS_PREFIX=aarch64-linux-gnu-
+          echo "FORGING STATIC ARM64 BINARY..."
+          # LDFLAGS='-static' is the key to independence
+          make -j$(nproc) CROSS_PREFIX=aarch64-linux-gnu- LDFLAGS='-static'
           
-          echo "VERIFYING BINARY ARCHITECTURE..."
+          echo "VERIFYING ARCHITECTURE..."
           file qjs
 
-      - name: Upload Hardened ARM64 Engine
+      - name: Upload Static ARM64 Engine
         if: steps.gate.outputs.MATCH == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: hardened-qjs-arm64
+          name: hardened-qjs-static-arm64
           path: quickjs/qjs
