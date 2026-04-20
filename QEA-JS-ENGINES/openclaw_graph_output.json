@@ -1,0 +1,418 @@
+{
+  "nodes": [
+    {
+      "id": "BB84_PROTOCOL",
+      "domain": "Cryptography",
+      "conf": 0.76,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.66
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.76
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.71
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "NO_CLONING",
+      "domain": "Cryptography",
+      "conf": 0.76,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.66
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.76
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.71
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "SHOR_ALGORITHM",
+      "domain": "Cryptography",
+      "conf": 0.76,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.66
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.76
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.71
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "BB84_EAVESDROP",
+      "domain": "Cryptography",
+      "conf": 0.76,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.66
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.76
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.71
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "LINDBLAD_EQ",
+      "domain": "Physics",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "DECOHERENCE_300K",
+      "domain": "Physics",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "ENTANGLEMENT_FIDELITY",
+      "domain": "Physics",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "FMO_300K",
+      "domain": "Biology",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "RUST_MEMORY_SAFETY",
+      "domain": "Code_Architecture",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "QKD_IMPLEMENTATION",
+      "domain": "Code_Architecture",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "BB84_PROTOCOL",
+      "to": "NO_CLONING",
+      "rel": "depends_on",
+      "strength": 0.99,
+      "weight": 0.693
+    },
+    {
+      "from": "SHOR_ALGORITHM",
+      "to": "BB84_PROTOCOL",
+      "rel": "contradicts",
+      "strength": 0.8,
+      "weight": -0.8
+    },
+    {
+      "from": "BB84_EAVESDROP",
+      "to": "BB84_PROTOCOL",
+      "rel": "amplifies",
+      "strength": 0.85,
+      "weight": 0.85
+    },
+    {
+      "from": "LINDBLAD_EQ",
+      "to": "DECOHERENCE_300K",
+      "rel": "amplifies",
+      "strength": 0.9,
+      "weight": 0.9
+    },
+    {
+      "from": "DECOHERENCE_300K",
+      "to": "ENTANGLEMENT_FIDELITY",
+      "rel": "contradicts",
+      "strength": 0.75,
+      "weight": -0.75
+    },
+    {
+      "from": "ENTANGLEMENT_FIDELITY",
+      "to": "QKD_IMPLEMENTATION",
+      "rel": "amplifies",
+      "strength": 0.88,
+      "weight": 0.88
+    },
+    {
+      "from": "FMO_300K",
+      "to": "ENTANGLEMENT_FIDELITY",
+      "rel": "amplifies",
+      "strength": 0.65,
+      "weight": 0.65
+    },
+    {
+      "from": "RUST_MEMORY_SAFETY",
+      "to": "QKD_IMPLEMENTATION",
+      "rel": "enables",
+      "strength": 0.94,
+      "weight": 0.47
+    },
+    {
+      "from": "BB84_PROTOCOL",
+      "to": "QKD_IMPLEMENTATION",
+      "rel": "enables",
+      "strength": 0.9,
+      "weight": 0.45
+    },
+    {
+      "from": "LINDBLAD_EQ",
+      "to": "ENTANGLEMENT_FIDELITY",
+      "rel": "enables",
+      "strength": 0.87,
+      "weight": 0.435
+    }
+  ],
+  "labels": [
+    "BB84_PROTOCOL",
+    "NO_CLONING",
+    "SHOR_ALGORITHM",
+    "BB84_EAVESDROP",
+    "LINDBLAD_EQ",
+    "DECOHERENCE_300K",
+    "ENTANGLEMENT_FIDELITY",
+    "FMO_300K",
+    "RUST_MEMORY_SAFETY",
+    "QKD_IMPLEMENTATION"
+  ],
+  "matrix": [
+    [
+      0.76,
+      0.693,
+      -0.4,
+      0.425,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.45
+    ],
+    [
+      0.3465,
+      0.76,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -0.8,
+      0,
+      0.76,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0.85,
+      0,
+      0,
+      0.76,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0.3,
+      0.9,
+      0.435,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0.45,
+      0.3,
+      -0.75,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0.2175,
+      -0.375,
+      0.3,
+      0.325,
+      0,
+      0.88
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.65,
+      0.3,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.3,
+      0.47
+    ],
+    [
+      0.225,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.44,
+      0,
+      0.235,
+      0.3
+    ]
+  ],
+  "isLive": true,
+  "taskScore": 0.5,
+  "activeDomains": [
+    "Cryptography",
+    "Physics",
+    "Biology",
+    "Code_Architecture"
+  ]
+}

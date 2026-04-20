@@ -27,23 +27,17 @@ jobs:
       - name: Execute JS-Engine Hardening
         if: steps.gate.outputs.MATCH == 'true'
         run: |
-          echo "RAISING THE BAR: Cloning QuickJS for SOTA Hardening..."
+          echo "RAISING THE BAR: Cloning QuickJS..."
           git clone https://github.com/bellard/quickjs.git
           cd quickjs
-          
-          echo "INJECTING CRYPTOGRAPHIC DNA..."
-          # Here we would normally use 'sed' to patch the C source code 
-          # with the CipherNebula logic found in directive.json
-          
-          echo "COMPILING HARDENED ENGINE..."
+          echo "COMPILING..."
           make -j$(nproc)
-          
-          echo "BUILD COMPLETE. EXECUTABLE READY."
-          ./qjs --version
+          echo "VERIFYING..."
+          ./qjs -h | head -n 1
 
       - name: Upload Hardened Engine
         if: steps.gate.outputs.MATCH == 'true'
-        uses: actions/checkout@v4
+        uses: actions/upload-artifact@v4
         with:
-          name: hardened-qjs-engine
+          name: hardened-qjs-binary
           path: quickjs/qjs

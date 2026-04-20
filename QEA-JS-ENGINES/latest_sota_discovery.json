@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-04-20T01:07:02.529893+00:00",
+  "tier1": [
+    {
+      "agent_id": "Agent-QKD-Global",
+      "domain": "Cryptography",
+      "query": "quantum key distribution room temperature experimental",
+      "title": "Quantum cryptography using pulsed homodyne detection",
+      "tier_score": 0.76,
+      "anchors": {
+        "Wikipedia": 0.66,
+        "arXiv": 0.76,
+        "NIST": 0.71
+      },
+      "tier": "Tier-1",
+      "source": "OpenAlex"
+    },
+    {
+      "agent_id": "Agent-QKD-Global",
+      "domain": "Cryptography",
+      "query": "quantum key distribution room temperature experimental",
+      "title": "Long-Distance Continuous-Variable Quantum Key Distribution over 202.81 km of Fiber",
+      "tier_score": 0.64,
+      "anchors": {
+        "Wikipedia": 0.54,
+        "arXiv": 0.64,
+        "NIST": 0.384
+      },
+      "tier": "Tier-1",
+      "source": "OpenAlex"
+    }
+  ],
+  "domain_summary": {
+    "Cryptography": {
+      "avg_tier_score": 0.7,
+      "count": 2,
+      "top_anchors": {
+        "Wikipedia": 0.66,
+        "arXiv": 0.76,
+        "NIST": 0.71
+      }
+    }
+  }
+}
