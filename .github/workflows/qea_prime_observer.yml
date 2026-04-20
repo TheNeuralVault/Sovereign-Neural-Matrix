@@ -1,0 +1,27 @@
+name: QEA PRIME SOTA OBSERVER
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+jobs:
+  observe_and_react:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Pull Gist Beacon
+        run: |
+          curl -sL https://gist.githubusercontent.com/TheNeuralVault/ff96e3c74a48554383d239fd29fa0441/raw/qea_prime_directive.json -o directive.json
+      - name: SOTA Score Gate
+        id: gate
+        run: |
+          MAX_SCORE=$(jq '[.tier1[].tier_score] | max' directive.json)
+          if (( $(echo "$MAX_SCORE > 0.90" | bc -l) )); then
+            echo "MATCH=true" >> $GITHUB_OUTPUT
+          else
+            echo "MATCH=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Execute Heavy Build
+        if: steps.gate.outputs.MATCH == 'true'
+        run: |
+          echo "RAISING THE BAR: Initiating Heavy Compute..."
