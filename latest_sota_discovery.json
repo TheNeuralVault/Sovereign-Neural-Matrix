@@ -1,212 +1,30 @@
 {
-  "timestamp": "2026-04-20T02:41:08.430097+00:00",
+  "timestamp": "2026-04-21T00:56:53.015549+00:00",
   "tier1": [
     {
-      "agent_id": "Agent-Rust-Crypto",
-      "domain": "Code_Architecture",
-      "query": "quantum cryptography implementation language:rust",
-      "title": "GitHub Repo: lidailin0730/CipherNebula (135 stars)",
-      "tier_score": 0.950491,
+      "agent_id": "Agent-Auto-1",
+      "domain": "Quantum_Discovery",
+      "query": "nitrogenase tunneling enzyme quantum math",
+      "title": "Quantum Computing for Molecular Biology**",
+      "tier_score": 0.637452,
       "anchors": {
-        "Wikipedia": 0.8005,
-        "arXiv": 0.9005,
-        "NIST": 0.9505
-      },
-      "tier": "Tier-1",
-      "source": "GitHub"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: Achieving 92% quantum purity at room temperature, a feat usually requiring near ...",
-      "tier_score": 0.940291,
-      "anchors": {
-        "Wikipedia": 0.7903,
-        "arXiv": 0.8903,
-        "NIST": 0.9403
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: Scientists have achieved a breakthrough in quantum research by demonstrating tha...",
-      "tier_score": 0.817021,
-      "anchors": {
-        "Wikipedia": 0.667,
-        "arXiv": 0.767,
-        "NIST": 0.817
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-QKD-Global",
-      "domain": "Cryptography",
-      "query": "quantum key distribution room temperature experimental",
-      "title": "Diamond-based single-photon emitters",
-      "tier_score": 0.780377,
-      "anchors": {
-        "Wikipedia": 0.6804,
-        "arXiv": 0.7804,
-        "NIST": 0.7304
+        "Wikipedia": 0.5375,
+        "arXiv": 0.6375,
+        "NIST": 0.3825
       },
       "tier": "Tier-1",
       "source": "OpenAlex"
     },
     {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: Scientists achieve breakthrough on quantum signaling A tiny device that entangle...",
-      "tier_score": 0.77921,
+      "agent_id": "Agent-Auto-1",
+      "domain": "Quantum_Discovery",
+      "query": "nitrogenase tunneling enzyme quantum math",
+      "title": "The prospects of quantum computing in computational molecular biology",
+      "tier_score": 0.620509,
       "anchors": {
-        "Wikipedia": 0.6292,
-        "arXiv": 0.7292,
-        "NIST": 0.7792
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: In several labs in 2023-2025, researchers demonstrated quantum coherence lasting...",
-      "tier_score": 0.760997,
-      "anchors": {
-        "Wikipedia": 0.611,
-        "arXiv": 0.711,
-        "NIST": 0.761
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: In a significant advancement for quantum computing, researchers at Xanadu, a Can...",
-      "tier_score": 0.754397,
-      "anchors": {
-        "Wikipedia": 0.6044,
-        "arXiv": 0.7044,
-        "NIST": 0.7544
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-Rust-Crypto",
-      "domain": "Code_Architecture",
-      "query": "quantum cryptography implementation language:rust",
-      "title": "GitHub Repo: thomasarmel/qkd_kme_server (27 stars)",
-      "tier_score": 0.739828,
-      "anchors": {
-        "Wikipedia": 0.5898,
-        "arXiv": 0.6898,
-        "NIST": 0.7398
-      },
-      "tier": "Tier-1",
-      "source": "GitHub"
-    },
-    {
-      "agent_id": "Agent-QKD-Global",
-      "domain": "Cryptography",
-      "query": "quantum key distribution room temperature experimental",
-      "title": "Long-Distance Continuous-Variable Quantum Key Distribution over 202.81 km of Fiber",
-      "tier_score": 0.739267,
-      "anchors": {
-        "Wikipedia": 0.6393,
-        "arXiv": 0.7393,
-        "NIST": 0.6893
-      },
-      "tier": "Tier-1",
-      "source": "OpenAlex"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: The breakthrough discovery of a new polymer by scientists at the Georgia Institu...",
-      "tier_score": 0.732347,
-      "anchors": {
-        "Wikipedia": 0.5823,
-        "arXiv": 0.6823,
-        "NIST": 0.7323
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: Although challenges remain—particularly in extending quantum coherence times—the...",
-      "tier_score": 0.731274,
-      "anchors": {
-        "Wikipedia": 0.5813,
-        "arXiv": 0.6813,
-        "NIST": 0.7313
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: Researchers have developed a new type of polymer, a plastic-like material, that ...",
-      "tier_score": 0.720393,
-      "anchors": {
-        "Wikipedia": 0.5704,
-        "arXiv": 0.6704,
-        "NIST": 0.7204
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-Rust-Crypto",
-      "domain": "Code_Architecture",
-      "query": "quantum cryptography implementation language:rust",
-      "title": "GitHub Repo: 0xmurtimus/WalletAnalytics (27 stars)",
-      "tier_score": 0.655486,
-      "anchors": {
-        "Wikipedia": 0.5055,
-        "arXiv": 0.6055,
-        "NIST": 0.6555
-      },
-      "tier": "Tier-1",
-      "source": "GitHub"
-    },
-    {
-      "agent_id": "Agent-Omni-Physics",
-      "domain": "Physics",
-      "query": "latest breakthrough room temperature quantum coherence",
-      "title": "Deep Web Extract: Taeyoung Moon et al, Highly radiative emission of room temperature-localized exc...",
-      "tier_score": 0.655486,
-      "anchors": {
-        "Wikipedia": 0.5055,
-        "arXiv": 0.6055,
-        "NIST": 0.6555
-      },
-      "tier": "Tier-1",
-      "source": "Vast_Web"
-    },
-    {
-      "agent_id": "Agent-QKD-Global",
-      "domain": "Cryptography",
-      "query": "quantum key distribution room temperature experimental",
-      "title": "Quantum cryptography using pulsed homodyne detection",
-      "tier_score": 0.634838,
-      "anchors": {
-        "Wikipedia": 0.5348,
-        "arXiv": 0.6348,
-        "NIST": 0.3809
+        "Wikipedia": 0.5205,
+        "arXiv": 0.6205,
+        "NIST": 0.3723
       },
       "tier": "Tier-1",
       "source": "OpenAlex"

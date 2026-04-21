@@ -3,19 +3,19 @@
     {
       "id": "BB84_PROTOCOL",
       "domain": "Cryptography",
-      "conf": 0.76,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
-          "confidence": 0.66
+          "confidence": 0.3
         },
         {
           "source": "arXiv",
-          "confidence": 0.76
+          "confidence": 0.3
         },
         {
           "source": "NIST",
-          "confidence": 0.71
+          "confidence": 0.3
         }
       ],
       "live": true
@@ -23,19 +23,19 @@
     {
       "id": "NO_CLONING",
       "domain": "Cryptography",
-      "conf": 0.76,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
-          "confidence": 0.66
+          "confidence": 0.3
         },
         {
           "source": "arXiv",
-          "confidence": 0.76
+          "confidence": 0.3
         },
         {
           "source": "NIST",
-          "confidence": 0.71
+          "confidence": 0.3
         }
       ],
       "live": true
@@ -43,19 +43,19 @@
     {
       "id": "SHOR_ALGORITHM",
       "domain": "Cryptography",
-      "conf": 0.76,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
-          "confidence": 0.66
+          "confidence": 0.3
         },
         {
           "source": "arXiv",
-          "confidence": 0.76
+          "confidence": 0.3
         },
         {
           "source": "NIST",
-          "confidence": 0.71
+          "confidence": 0.3
         }
       ],
       "live": true
@@ -63,19 +63,19 @@
     {
       "id": "BB84_EAVESDROP",
       "domain": "Cryptography",
-      "conf": 0.76,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
-          "confidence": 0.66
+          "confidence": 0.3
         },
         {
           "source": "arXiv",
-          "confidence": 0.76
+          "confidence": 0.3
         },
         {
           "source": "NIST",
-          "confidence": 0.71
+          "confidence": 0.3
         }
       ],
       "live": true
@@ -83,7 +83,7 @@
     {
       "id": "LINDBLAD_EQ",
       "domain": "Physics",
-      "conf": 0.3,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
@@ -103,7 +103,7 @@
     {
       "id": "DECOHERENCE_300K",
       "domain": "Physics",
-      "conf": 0.3,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
@@ -123,7 +123,7 @@
     {
       "id": "ENTANGLEMENT_FIDELITY",
       "domain": "Physics",
-      "conf": 0.3,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
@@ -161,9 +161,49 @@
       "live": true
     },
     {
+      "id": "NITROGENASE_TUNNELING",
+      "domain": "Biology",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    },
+    {
+      "id": "EXCITON_COHERENCE",
+      "domain": "Biology",
+      "conf": 0.3,
+      "anchors": [
+        {
+          "source": "Wikipedia",
+          "confidence": 0.3
+        },
+        {
+          "source": "arXiv",
+          "confidence": 0.3
+        },
+        {
+          "source": "NIST",
+          "confidence": 0.3
+        }
+      ],
+      "live": true
+    },
+    {
       "id": "RUST_MEMORY_SAFETY",
       "domain": "Code_Architecture",
-      "conf": 0.3,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
@@ -183,7 +223,7 @@
     {
       "id": "QKD_IMPLEMENTATION",
       "domain": "Code_Architecture",
-      "conf": 0.3,
+      "conf": 0.15,
       "anchors": [
         {
           "source": "Wikipedia",
@@ -252,6 +292,20 @@
       "weight": 0.65
     },
     {
+      "from": "NITROGENASE_TUNNELING",
+      "to": "EXCITON_COHERENCE",
+      "rel": "enables",
+      "strength": 0.95,
+      "weight": 0.475
+    },
+    {
+      "from": "EXCITON_COHERENCE",
+      "to": "ENTANGLEMENT_FIDELITY",
+      "rel": "amplifies",
+      "strength": 0.88,
+      "weight": 0.88
+    },
+    {
       "from": "RUST_MEMORY_SAFETY",
       "to": "QKD_IMPLEMENTATION",
       "rel": "enables",
@@ -282,15 +336,19 @@
     "DECOHERENCE_300K",
     "ENTANGLEMENT_FIDELITY",
     "FMO_300K",
+    "NITROGENASE_TUNNELING",
+    "EXCITON_COHERENCE",
     "RUST_MEMORY_SAFETY",
     "QKD_IMPLEMENTATION"
   ],
   "matrix": [
     [
-      0.76,
+      0.15,
       0.693,
       -0.4,
       0.425,
+      0,
+      0,
       0,
       0,
       0,
@@ -300,7 +358,9 @@
     ],
     [
       0.3465,
-      0.76,
+      0.15,
+      0,
+      0,
       0,
       0,
       0,
@@ -313,7 +373,9 @@
     [
       -0.8,
       0,
-      0.76,
+      0.15,
+      0,
+      0,
       0,
       0,
       0,
@@ -326,7 +388,9 @@
       0.85,
       0,
       0,
-      0.76,
+      0.15,
+      0,
+      0,
       0,
       0,
       0,
@@ -339,9 +403,11 @@
       0,
       0,
       0,
-      0.3,
+      0.15,
       0.9,
       0.435,
+      0,
+      0,
       0,
       0,
       0
@@ -352,8 +418,10 @@
       0,
       0,
       0.45,
-      0.3,
+      0.15,
       -0.75,
+      0,
+      0,
       0,
       0,
       0
@@ -365,8 +433,10 @@
       0,
       0.2175,
       -0.375,
-      0.3,
+      0.15,
       0.325,
+      0,
+      0.44,
       0,
       0.88
     ],
@@ -380,6 +450,8 @@
       0.65,
       0.3,
       0,
+      0,
+      0,
       0
     ],
     [
@@ -392,6 +464,36 @@
       0,
       0,
       0.3,
+      0.475,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.88,
+      0,
+      0.2375,
+      0.3,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.15,
       0.47
     ],
     [
@@ -403,16 +505,15 @@
       0,
       0.44,
       0,
+      0,
+      0,
       0.235,
-      0.3
+      0.15
     ]
   ],
   "isLive": true,
   "taskScore": 0.5,
   "activeDomains": [
-    "Cryptography",
-    "Physics",
-    "Biology",
-    "Code_Architecture"
+    "Biology"
   ]
 }

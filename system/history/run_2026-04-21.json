@@ -1,0 +1,41 @@
+[
+  {
+    "timestamp": "2026-04-21T00:57:15.648671+00:00",
+    "run_number": 8,
+    "tier1_count": 2,
+    "top_score": 0.637452,
+    "sources": [
+      "OpenAlex"
+    ],
+    "discoveries": [
+      {
+        "agent_id": "Agent-Auto-1",
+        "domain": "Quantum_Discovery",
+        "query": "nitrogenase tunneling enzyme quantum math",
+        "title": "Quantum Computing for Molecular Biology**",
+        "tier_score": 0.637452,
+        "anchors": {
+          "Wikipedia": 0.5375,
+          "arXiv": 0.6375,
+          "NIST": 0.3825
+        },
+        "tier": "Tier-1",
+        "source": "OpenAlex"
+      },
+      {
+        "agent_id": "Agent-Auto-1",
+        "domain": "Quantum_Discovery",
+        "query": "nitrogenase tunneling enzyme quantum math",
+        "title": "The prospects of quantum computing in computational molecular biology",
+        "tier_score": 0.620509,
+        "anchors": {
+          "Wikipedia": 0.5205,
+          "arXiv": 0.6205,
+          "NIST": 0.3723
+        },
+        "tier": "Tier-1",
+        "source": "OpenAlex"
+      }
+    ]
+  }
+]

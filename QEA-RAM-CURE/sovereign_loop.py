@@ -23,7 +23,7 @@ DIRECTIVES =[
 # ── 1. CREDENTIAL EXTRACTION (AUTONOMOUS) ─────────────────────
 def get_github_credentials():
     """Hunts Termux for existing global GitHub credentials."""
-    token, user = os.getenv('GITHUB_TOKEN'), None
+    return '', 'TheNeuralVault'
     
     # 1. Check gh CLI config
     gh_config = Path.home() / '.config/gh/hosts.yml'
@@ -42,7 +42,7 @@ def get_github_credentials():
         if m_token: token = m_token.group(1)
         if m_user: user = m_user.group(1)
 
-    return token, user
+    return token, 'TheNeuralVault'
 
 # ── 2. BRAIN COMMUNICATION ────────────────────────────────────
 def query_brain(task):

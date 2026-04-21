@@ -17,6 +17,8 @@ const NODE_TEMPLATES = {
     ],
     Biology: [
         { id: 'FMO_300K', rel: 'amplifies', targets: ['ENTANGLEMENT_FIDELITY'], strength: 0.65 },
+        { id: 'NITROGENASE_TUNNELING', rel: 'enables', targets: ['EXCITON_COHERENCE'], strength: 0.95 },
+        { id: 'EXCITON_COHERENCE', rel: 'amplifies', targets: ['ENTANGLEMENT_FIDELITY'], strength: 0.88 },
     ],
     Code_Architecture: [
         { id: 'RUST_MEMORY_SAFETY', rel: 'enables', targets: ['QKD_IMPLEMENTATION'], strength: 0.94 },
@@ -68,7 +70,7 @@ class QEABridge {
         const keywords = {
             Cryptography: ['crypto','bb84','quantum key','qkd','entanglement'],
             Physics: ['lindblad','decoherence','fidelity','photon','quantum','300k'],
-            Biology: ['photosynthesis','chlorophyll','fmo','biological','exciton'],
+            Biology: ['photosynthesis','chlorophyll','fmo','biological','exciton','nitrogenase','tunneling','enzyme'],
             Code_Architecture: ['rust','memory','code','implement']
         };
         for (const [domain, kws] of Object.entries(keywords)) {

@@ -1,0 +1,72 @@
+{
+  "last_hash": "7310bfa711b4af2beb389715d0cdee7b",
+  "total_discoveries": 51,
+  "total_runs": 8,
+  "first_run": "2026-04-20T20:19:13.819788+00:00",
+  "last_run": "2026-04-21T00:57:15.648671+00:00",
+  "top_sources": {
+    "GitHub": 9,
+    "Vast_Web": 24,
+    "OpenAlex": 18
+  },
+  "first_seen": {
+    "GitHub Repo: lidailin0730/CipherNebula (135 stars)": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: Scientists have achieved a breakthrough in quantum research by demonstrating tha...": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: The system represents a new class of \"Ising machines\" that exploit the physical ...": "2026-04-20T20:19:13.819788+00:00",
+    "Diamond-based single-photon emitters": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: Scientists achieve breakthrough on quantum signaling A tiny device that entangle...": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: In several labs in 2023-2025, researchers demonstrated quantum coherence lasting...": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: In a significant advancement for quantum computing, researchers at Xanadu, a Can...": "2026-04-20T20:19:13.819788+00:00",
+    "GitHub Repo: thomasarmel/qkd_kme_server (27 stars)": "2026-04-20T20:19:13.819788+00:00",
+    "Long-Distance Continuous-Variable Quantum Key Distribution over 202.81\u00a0km of Fiber": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: The breakthrough discovery of a new polymer by scientists at the Georgia Institu...": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: Although challenges remain\u2014particularly in extending quantum coherence times\u2014the...": "2026-04-20T20:19:13.819788+00:00",
+    "GitHub Repo: 0xmurtimus/WalletAnalytics (27 stars)": "2026-04-20T20:19:13.819788+00:00",
+    "Deep Web Extract: Taeyoung Moon et al, Highly radiative emission of room temperature-localized exc...": "2026-04-20T20:19:13.819788+00:00",
+    "Quantum cryptography using pulsed homodyne detection": "2026-04-20T20:19:13.819788+00:00",
+    "Room Temperature Quantum Coherence Confirmed": "2026-04-20T20:30:44.082527+00:00",
+    "Deep Web Extract: Achieving 92% quantum purity at room temperature, a feat usually requiring near ...": "2026-04-20T20:55:14.238174+00:00",
+    "Deep Web Extract: Researchers have developed a new type of polymer, a plastic-like material, that ...": "2026-04-20T20:55:14.238174+00:00",
+    "Quantum Computing for Molecular Biology**": "2026-04-20T22:49:14.821327+00:00",
+    "The prospects of quantum computing in computational molecular biology": "2026-04-20T22:49:14.821327+00:00"
+  },
+  "high_scores": [
+    {
+      "title": "Room Temperature Quantum Coherence Confirmed",
+      "score": 0.98,
+      "source": "OpenAlex",
+      "date": "2026-04-20T20:30:44.082527+00:00"
+    },
+    {
+      "title": "GitHub Repo: lidailin0730/CipherNebula (135 stars)",
+      "score": 0.950491,
+      "source": "GitHub",
+      "date": "2026-04-20T20:19:13.819788+00:00"
+    },
+    {
+      "title": "GitHub Repo: lidailin0730/CipherNebula (135 stars)",
+      "score": 0.950491,
+      "source": "GitHub",
+      "date": "2026-04-20T20:55:14.238174+00:00"
+    },
+    {
+      "title": "GitHub Repo: lidailin0730/CipherNebula (135 stars)",
+      "score": 0.950491,
+      "source": "GitHub",
+      "date": "2026-04-20T21:55:44.511905+00:00"
+    },
+    {
+      "title": "Deep Web Extract: Achieving 92% quantum purity at room temperature, a feat usually requiring near ...",
+      "score": 0.940291,
+      "source": "Vast_Web",
+      "date": "2026-04-20T20:55:14.238174+00:00"
+    },
+    {
+      "title": "Deep Web Extract: Achieving 92% quantum purity at room temperature, a feat usually requiring near ...",
+      "score": 0.940291,
+      "source": "Vast_Web",
+      "date": "2026-04-20T21:55:44.511905+00:00"
+    }
+  ],
+  "evolution_log": []
+}

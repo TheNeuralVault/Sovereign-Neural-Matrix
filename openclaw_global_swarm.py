@@ -141,11 +141,19 @@ async def github_agent(session, bucket, proxies, agent_id, query, domain):
         })
     return discoveries
 
-AGENTS = [
-    (openalex_agent, 'Agent-QKD-Global', 'quantum key distribution room temperature experimental', 'Cryptography'),
-    (github_agent, 'Agent-Rust-Crypto', 'quantum cryptography implementation language:rust', 'Code_Architecture'),
-    (omni_web_agent, 'Agent-Omni-Physics', 'latest breakthrough room temperature quantum coherence', 'Physics')
-]
+def get_dynamic_agents():
+    directive_path = '/data/data/com.termux/files/home/TheNeuralVault/QEA-RAM-CURE/hunting_directives.txt'
+    agents = []
+    if os.path.exists(directive_path):
+        with open(directive_path, 'r') as df:
+            for i, d in enumerate(df.readlines()):
+                d = d.strip()
+                if d:
+                    agents.append((openalex_agent, f'Agent-Auto-{i}', d, 'Quantum_Discovery'))
+    if not agents:
+        agents.append((omni_web_agent, 'Agent-Fallback', 'latest breakthrough room temperature quantum coherence', 'Physics'))
+    return agents
+
 
 async def swarm():
     print("=================================================================")
@@ -155,7 +163,8 @@ async def swarm():
     connector = aiohttp.TCPConnector(limit=10, force_close=True)
     async with aiohttp.ClientSession(connector=connector) as session:
         proxies = await get_proxy_mesh(session)
-        tasks = [func(session, bucket, proxies, aid, query, domain) for func, aid, query, domain in AGENTS]
+        dynamic_agents = get_dynamic_agents()
+        tasks = [func(session, bucket, proxies, aid, query, domain) for func, aid, query, domain in dynamic_agents]
         results = await asyncio.gather(*tasks, return_exceptions=True)
     
     all_discoveries = [d for r in results if isinstance(r, list) for d in r]
